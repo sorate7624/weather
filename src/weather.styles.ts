@@ -30,6 +30,12 @@ export const Container = styled.div<HeightProps>`
   font-family: 'Roboto', sans-serif;
   transition: 0.6s ease-out;
   background: #75B4E3;
+  margin: 0 auto;
+
+  @media screen and (max-width: 500px) {
+    max-width: calc(100% - 80px);
+    max-height: 450px;
+  }
 `;
 
 export const SearchBox = styled.div`
@@ -48,19 +54,25 @@ export const SearchBox = styled.div`
 
 export const SearchInput = styled.input`
   color: #fff;
-  width: 70%;
+  width: calc(100% - 80px);
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
   margin-left: 32px;
   background-color: #75B4E3;
   border-bottom: 1px solid #fff;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 
   &::placeholder {
     font-size: 20px;
     font-weight: 500;
     color: #fff;
     text-transform: capitalize;
+    @media screen and (max-width: 500px) {
+      font-size: 18px;
+    }
   }
 
   &:focus::placeholder {
@@ -70,8 +82,8 @@ export const SearchInput = styled.input`
 
 export const SearchButton = styled.button`
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: #75B4E3;
   border-radius: 50%;
   font-size: 22px;
@@ -103,6 +115,9 @@ export const NotFound = styled.div<DisplayProps>`
     font-size: 22px;
     font-weight: 500;
     margin-top: 50px;
+    @media screen and (max-width: 500px) {
+      margin-top: 10px;
+    }
   }
 `;
 
@@ -143,6 +158,9 @@ export const WeatherDetails = styled.div<DisplayProps>`
   display: ${(props)=> props.display || "flex"};
   justify-content: space-between;
   margin-top: 30px;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const WeatherDetailsHumidity = styled.div`
