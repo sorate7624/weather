@@ -1,46 +1,100 @@
-# Getting Started with Create React App
+# weather
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 도시별로 날씨를 검색할 수 있는 웹 사이트입니다.
 
-## Available Scripts
+영어로 도시를 검색하여,
+해당되는 도시의 온도, 습도, 풍속, 등 날씨 정보를 알 수 있습니다.
 
-In the project directory, you can run:
+### demo
 
-### `npm start`
+[https://sorate7624.github.io/weather/](https://sorate7624.github.io/weather/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![weather](./weather.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 설치 방법
 
-### `npm test`
+아래 단계를 따라 프로젝트를 설치하세요.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. 프로젝트를 클론합니다.
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/sorate7624/weather.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. 프로젝트 디렉토리로 이동합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd weather
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. 종속성을 설치합니다.
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. 프로젝트를 실행합니다.
+   ```bash
+   npm run dev
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 기술 스택
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+프로젝트의 기술 스택은 다음과 같습니다.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Development
 
-## Learn More
+<div style="display: flex">
+  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="">
+  <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+  <br/>
+  <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white">
+  <img src="https://img.shields.io/badge/fontawesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white">
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Environment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<div style="display: flex">
+  <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+</div>
+
+### Config
+
+<div style="display: flex">
+  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+</div>
+
+## 폴더 구조
+
+프로젝트의 주요 폴더 구조는 다음과 같습니다.
+
+- `public/`: 정적 파일들을 담고 있는 폴더입니다. 'Earth' 이미지 관련 파일이 여기에 위치합니다.
+- `src/`: 프로젝트의 소스 코드를 담고 있는 폴더입니다. `main.jsx` 파일이 여기에 위치합니다.
+  - `api/`: 프로젝트에서 사용되는 api 관련 파일들을 담고 있는 폴더입니다.
+  - `assets/`: 프로젝트에서 사용되는 resouces들을 담고 있는 폴더입니다.
+  - `weather.styles.ts`: 프로젝트에서 사용되는 styled-components 파일입니다.
+- `tsconfig.json`: typescript 설정 파일입니다.
+
+## 업데이트 내역
+
+- 0.0.2
+  - 모바일 UI 적용
+- 0.0.1
+  - 첫 출시
+
+## 정보
+
+최혜진 – sorate_@naver.com
+
+[https://github.com/sorate7624/](https://github.com/sorate7624/)
+
+## 기여 방법
+
+1. (<https://github.com/sorate7624/weather/fork>)을 포크합니다.
+2. (`git checkout -b feature/fooBar`) 명령어로 새 브랜치를 만드세요.
+3. (`git commit -am 'Add some fooBar'`) 명령어로 커밋하세요.
+4. (`git push origin feature/fooBar`) 명령어로 브랜치에 푸시하세요.
+5. 풀리퀘스트를 보내주세요.
